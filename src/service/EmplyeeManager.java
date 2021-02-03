@@ -42,7 +42,7 @@ public class EmplyeeManager implements Manager {
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
 			
-			String temp = null;
+			String temp;
 			while(true) {
 				temp = br.readLine();
 				if(temp == null) {
@@ -80,6 +80,7 @@ public class EmplyeeManager implements Manager {
 				}
 			}
 			catch (Exception e) {
+				e.printStackTrace();
 			}
 		}//finally
 	}
